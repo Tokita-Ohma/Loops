@@ -1,0 +1,97 @@
+WHILE LOOPS — HANDS-ON PRACTICE LAB
+⏱ Rules
+1.Use while loops
+2.Use break and/or conditions properly
+3.No for loops unless explicitly allowed
+4.Network-realistic scenarios
+
+🔹 Problem 1: Device Entry Loop
+Goal: Collect network devices until the admin stops.
+Requirements
+- Create an empty list devices
+- Keep asking for device names
+- If user enters done, stop the loop
+- Print the final list
+
+Expected behavior
+Enter device: router
+Enter device: firewall
+Enter device: done
+Devices registered: ['router', 'firewall']
+
+
+🔹 Problem 2: Interface Status Monitor
+Goal: Validate input using a while loop.
+Requirements
+1.Ask user for interface status
+2.Accept only up or down
+3.If invalid, ask again
+4.Print final status
+
+🔹 Problem 3: Login Attempt Limiter 🔐
+Goal: Simulate security control.
+Requirements
+1.Set correct password = "admin123"
+2.Allow 3 attempts only
+3.If correct → print "Access granted"
+4.If failed after 3 attempts → print "Account locked"
+
+⚠️ Use:
+- Counter variable
+- while loop
+
+🔹 Problem 4: Port Scan Simulation
+Goal: Process multiple ports dynamically.
+Requirements
+1.Start with an empty list open_ports
+2.Ask user to enter port numbers
+3.Stop when user enters 0
+4.Store ports in the list
+5.After loop:
+	-Print all ports
+	-Print count of ports
+
+
+🔹 Problem 5: Firewall Rule Approval Loop
+Goal: Conditional exit with decision logic.
+Requirements
+1.Ask user for firewall rule action (accept or deny)
+2.If input is invalid, keep asking
+3.When valid, print:
+
+"Firewall rule set to ACCEPT"
+
+or
+
+"Firewall rule set to DENY"
+
+
+🔹 Problem 6: Device Reachability Checker
+Goal: Combine list + while loop.
+Requirements
+devices = ["192.168.1.1", "192.168.1.2", "192.168.1.3"]
+
+1.Use a while loop to iterate through devices
+2.Ask for status (up/down) for each
+3.Print reachability result
+
+⚠️ Do not use 'for'
+
+🔥 Problem 7: Mini Automation Challenge (Real World)
+
+Goal: Policy validation logic.
+
+Requirements
+1.Create an empty list policies
+2.Ask user to enter policy IDs
+3.Stop when user enters -1
+4.For each policy ID:
+	i. Ask for allowed ports (comma-separated)
+	ii. Store as a dictionary inside the list
+
+After data collection:
+	i. Loop through policies
+	ii. If any port is NOT 22 or 443
+		- Print Policy <id>: Review required
+Else
+- Print Policy <id>: Secure
