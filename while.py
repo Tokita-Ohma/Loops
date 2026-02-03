@@ -24,7 +24,7 @@ while True:
     else:
         continue
 
- Problem 3
+#Problem 3
 
 correct_password = 'admin123'
 n = 0
@@ -109,3 +109,4 @@ for k,v in id.items():
         print(f'Policy_id {k} port review Required\n')
 
   #Problem 7, Probably might not answer the problem fully... i guess
+
